@@ -35,7 +35,7 @@ Fájlban tároljuk, hogy egy londoni pincér mekkora összegeket helyezett el a 
 
 #G i. Hányadik vendég fizetett 9 fontot?
 
-#Mj. Ha volt olyan vendég, aki tíz fontnál többet fizetett, akkor mondjuk meg, hogy hányadik vendég volt az első ilyen!
+#M j. Ha volt olyan vendég, aki tíz fontnál többet fizetett, akkor mondjuk meg, hogy hányadik vendég volt az első ilyen!
 
 #M k. Ha volt olyan vendég, aki tíz fontnál többet fizetett, akkor mondjuk meg, hogy hányadik vendég volt az utolsó ilyen!
 
