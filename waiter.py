@@ -1,21 +1,14 @@
+# Alprogramok
+
 def beolvasas():
-    adatok=[]
-    with open("adatok.txt","r",encoding="UTF-8")as fm:
+    adatok = []
+    with open("adatok.txt", "r", encoding="UTF-8") as fm:
         for sor in fm:
             adatok.append(float(sor.strip()))
     return adatok
 
-osszegek=beolvasas()
-
-print(osszegek)
-
 def szamitas(a):
     return sum(a)
-     
-asd=szamitas(osszegek)
-print(asd)
-
-
 
 def eldontes(osszegek):
     talalt_elso = False
@@ -32,11 +25,23 @@ def eldontes(osszegek):
         return elso, utolso
     else:
         return -1, -1
+    
+def kiir(elso, utolso,ossz):
+    print(f"Az óra végen {osszegzes} lett a pénztárcájá-ban")
+    if elso != -1:
+        print(f"Az első tíz fontnál többet fizető vendég a, {elso + 1}  volt.")
+        print(f"Az utolsó tíz fontnál többet fizető vendég a, {utolso + 1} volt.")
+    
 
-elso,utolso = eldontes(osszegek)
 
-if elso != -1:
-    print("Az első tíz fontnál többet fizető vendég a", elso + 1, ". volt.")
-    print("Az utolsó tíz fontnál többet fizető vendég a", utolso + 1, ". volt.")
-else:
-    print("Nem volt olyan vendég, aki tíz fontnál többet fizetett.")
+# Fő program
+
+# 1 input
+osszegek = beolvasas()
+
+# 2 Számítás
+osszegzes = szamitas(osszegek)
+elso, utolso = eldontes(osszegek)
+
+# 3 output
+kiir(elso, utolso,osszegzes)
